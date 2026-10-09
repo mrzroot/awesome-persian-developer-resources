@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en" data-lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awesome Persian Developer Resources · A curated index for Iranian developers</title>
+<meta name="description" content="A searchable, CC0 index of tools, Iranian APIs, Python packages, Persian fonts and date pickers, Persian NLP, payment and SMS SDKs, roadmaps and developer DNS services for Iranian developers.">
+<meta name="theme-color" content="#f7f1e6">
+<meta property="og:title" content="Awesome Persian Developer Resources · منابع توسعه‌دهندگان فارسی‌زبان">
+<meta property="og:description" content="A searchable, CC0 index of the tools, APIs, packages and fonts Iranian developers actually use.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mrzroot.github.io/awesome-persian-developer-resources/">
+<link rel="canonical" href="https://mrzroot.github.io/awesome-persian-developer-resources/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>(function(){var d=document.documentElement,l='en';try{l=new URLSearchParams(location.search).get('lang')||localStorage.getItem('mrz-lang')||'en'}catch(e){}if(l==='fa'){d.lang='fa';d.dir='rtl';d.setAttribute('data-lang','fa')}})()</script>
+<style>
+@font-face{font-family:Vazirmatn;src:url(fonts/vazirmatn-arabic.woff2) format('woff2');font-weight:400 800;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+200C-200E,U+FB50-FDFF,U+FE70-FEFC}
+:root{--paper:#f7f1e6;--paper2:#efe6d6;--card:#fffdf8;--ink:#141210;--ink2:#3b352e;--mut:#6f665b;--rule:#141210;
+--c1:#ff5a36;--c2:#3d7bff;--c3:#2bb673;--c4:#ffc83d;--c5:#a25bff;--c6:#ff3d8b;--c7:#00a3a3;
+--sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,Vazirmatn,sans-serif;--fa:Vazirmatn,"Segoe UI",Tahoma,sans-serif;--serif:Georgia,"Times New Roman",serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--paper)}
+body{margin:0;color:var(--ink);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html[data-lang=fa] body{font-family:var(--fa);line-height:1.85}
+html[data-lang=en] [lang=fa],html[data-lang=fa] [lang=en]{display:none!important}
+a{color:inherit}
+code{font-family:var(--mono);font-size:.9em}
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+/* masthead */
+.mast{border-bottom:3px solid var(--rule);background:var(--paper);position:sticky;top:0;z-index:20}
+.mast .wrap{display:flex;align-items:center;gap:20px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;text-decoration:none;font-size:15px;letter-spacing:-.01em}
+.logo svg{width:30px;height:30px}
+.mast nav{margin-inline-start:auto;display:flex;align-items:center;gap:22px;font-size:14px;font-weight:700}
+.mast nav a{text-decoration:none}.mast nav a:hover{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:5px}
+.lang{display:flex;border:2px solid var(--ink);border-radius:999px;overflow:hidden}
+.lang button{background:none;border:0;font:800 12px var(--sans);padding:5px 11px;cursor:pointer;color:var(--ink)}
+.lang button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.gh{border:2px solid var(--ink);border-radius:999px;padding:5px 14px}
+.ticker{border-bottom:1px solid var(--rule);font:700 12px var(--mono);text-transform:uppercase;letter-spacing:.08em;overflow:hidden;white-space:nowrap;background:var(--ink);color:var(--paper)}
+.ticker div{display:inline-block;padding:7px 0;animation:tk 40s linear infinite}
+.ticker span{margin:0 18px}.ticker i{font-style:normal;color:var(--c4)}
+@keyframes tk{to{transform:translateX(-50%)}}
+html[dir=rtl] .ticker div{animation-name:tkr}@keyframes tkr{to{transform:translateX(50%)}}
+/* hero */
+.hero{padding:60px 0 50px;border-bottom:3px solid var(--rule)}
+.hero .wrap{display:grid;grid-template-columns:1.35fr 1fr;gap:50px;align-items:end}
+.hero .wrap>*{min-width:0}
+.kicker{font:800 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;display:flex;gap:12px;align-items:center}
+html[data-lang=fa] .kicker{letter-spacing:0;font-family:var(--fa);font-size:14px}
+.kicker b{background:var(--c4);padding:2px 8px}
+h1{font-size:clamp(46px,7.4vw,104px);line-height:.9;letter-spacing:-.05em;margin:20px 0 22px;font-weight:900}
+h1 em{font-family:var(--serif);font-weight:400;font-style:italic;letter-spacing:-.03em}
+h1 .mk{background:linear-gradient(transparent 58%,var(--c4) 58%,var(--c4) 92%,transparent 92%);padding:0 .06em}
+html[data-lang=fa] h1{letter-spacing:0;line-height:1.2;font-size:clamp(40px,6vw,84px)}
+html[data-lang=fa] h1 em{font-family:var(--fa);font-style:normal;font-weight:400}
+.lead{font-size:19px;color:var(--ink2);max-width:640px;margin:0 0 28px}
+.search{display:flex;align-items:center;gap:12px;border:3px solid var(--ink);background:var(--card);padding:6px 6px 6px 18px;border-radius:999px;max-width:640px;box-shadow:0 6px 0 var(--ink)}
+html[dir=rtl] .search{padding:6px 18px 6px 6px}
+.search svg{width:22px;height:22px;flex:none}
+.search input{flex:1;min-width:0;border:0;background:none;font:600 18px var(--sans);color:var(--ink);outline:0;padding:10px 0}
+html[data-lang=fa] .search input{font-family:var(--fa)}
+.search kbd{font:700 12px var(--mono);border:2px solid var(--ink);border-radius:6px;padding:2px 8px}
+.search button{background:var(--ink);color:var(--paper);border:0;border-radius:999px;font:800 14px var(--sans);padding:12px 20px;cursor:pointer}
+html[data-lang=fa] .search button{font-family:var(--fa)}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:3px solid var(--ink);background:var(--card)}
+.stats>div{padding:20px 22px;border-bottom:3px solid var(--ink)}
+.stats>div:nth-child(odd){border-inline-end:3px solid var(--ink)}
+.stats>div:nth-last-child(-n+2){border-bottom:0}
+.stats b{display:block;font-size:56px;line-height:1;font-weight:900;letter-spacing:-.04em}
+.stats span{font-size:14px;font-weight:700;color:var(--mut)}
+.stats .s1{background:var(--c1);color:#fff}.stats .s1 span{color:#ffe6df}
+.stats .s4{background:var(--c3);color:#fff}.stats .s4 span{color:#dcf7ea}
+/* chips + grid */
+.idx{padding:54px 0 30px}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:28px}
+.chip{border:2px solid var(--ink);background:var(--card);border-radius:999px;padding:7px 14px;font:800 13px var(--sans);cursor:pointer;display:inline-flex;gap:8px;align-items:center;color:var(--ink)}
+html[data-lang=fa] .chip{font-family:var(--fa)}
+.chip i{width:10px;height:10px;border-radius:50%;display:inline-block;font-style:normal}
+.chip small{font:700 11px var(--mono);opacity:.6}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.count{margin-inline-start:auto;font:700 13px var(--mono);color:var(--mut)}
+.cat{margin:0 0 46px}
+.cat h2{display:flex;align-items:baseline;gap:16px;font-size:clamp(26px,3vw,38px);letter-spacing:-.03em;font-weight:900;margin:0 0 18px;padding-bottom:12px;border-bottom:3px solid var(--ink)}
+html[data-lang=fa] h2{letter-spacing:0}
+.cat h2 .no{font:400 italic 1.1em var(--serif);color:var(--cc)}
+html[data-lang=fa] .cat h2 .no{font-style:normal;font-family:var(--fa);font-weight:800}
+.cat h2 small{margin-inline-start:auto;font:700 12px var(--mono);color:var(--mut)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cards>*{min-width:0}
+.card{background:var(--card);border:2px solid var(--ink);border-radius:14px;padding:18px 18px 16px;position:relative;display:flex;flex-direction:column;gap:8px;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);box-shadow:0 5px 0 var(--ink)}
+.card:before{content:"";position:absolute;inset-block:14px;inset-inline-start:-2px;width:5px;border-radius:3px;background:var(--cc)}
+.card h3{margin:0;font-size:17px;line-height:1.35;font-weight:900}
+.card h3 a{text-decoration:none}.card h3 a:hover{text-decoration:underline;text-decoration-color:var(--cc);text-decoration-thickness:3px}
+.card p{margin:0;color:var(--ink2);font-size:14.5px}
+.card .meta{margin-top:auto;display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding-top:6px}
+.card .meta code{background:var(--paper2);padding:3px 8px;border-radius:6px;direction:ltr;unicode-bidi:isolate}
+.card .meta .cp{border:0;background:none;cursor:pointer;font:700 12px var(--sans);color:var(--mut);padding:2px 4px}
+.card .meta .cp.ok{color:var(--c3)}
+.card .go{font:800 12px var(--mono);color:var(--cc);text-decoration:none;filter:brightness(.8)}
+.empty{border:3px dashed var(--ink);border-radius:14px;padding:40px;text-align:center;font-weight:800;display:none}
+mark{background:var(--c4);color:inherit;padding:0 2px}
+/* playground */
+.play{background:var(--ink);color:var(--paper);padding:84px 0;border-top:3px solid var(--rule);border-bottom:3px solid var(--rule)}
+.play .kicker b{color:var(--ink)}
+.play h2,.sec h2{font-size:clamp(32px,4.4vw,58px);line-height:1;letter-spacing:-.045em;font-weight:900;margin:16px 0 14px}
+html[data-lang=fa] .play h2,html[data-lang=fa] .sec h2{letter-spacing:0;line-height:1.3}
+.play .sub{color:#c9bfb0;max-width:700px;margin:0 0 40px;font-size:17px}
+.tools{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.tools>*{min-width:0}
+.tool{background:#1f1c18;border:2px solid #3a342c;border-radius:16px;padding:22px;position:relative;overflow:hidden}
+.tool:after{content:"";position:absolute;inset:auto -40px -40px auto;width:120px;height:120px;border-radius:50%;background:var(--cc);opacity:.18}
+html[dir=rtl] .tool:after{inset:auto auto -40px -40px}
+.tool h3{margin:0 0 4px;font-size:18px;display:flex;gap:10px;align-items:center}
+.tool h3 i{font-style:normal;font:800 11px var(--mono);background:var(--cc);color:var(--ink);padding:2px 8px;border-radius:999px}
+.tool p.h{margin:0 0 14px;color:#a89e90;font-size:14px}
+.tool input{width:100%;background:#0f0d0b;border:2px solid #3a342c;border-radius:10px;color:var(--paper);font:600 17px var(--sans);padding:11px 14px;outline:0}
+html[data-lang=fa] .tool input{font-family:var(--fa)}
+.tool input:focus{border-color:var(--cc)}
+.out{margin-top:12px;font-size:20px;font-weight:800;min-height:34px;font-family:var(--fa);direction:rtl;text-align:right;word-break:break-word}
+.out.l{direction:ltr;text-align:left;font-family:var(--sans)}
+.out small{display:block;font:600 13px var(--sans);color:#a89e90;direction:ltr;text-align:left}
+.badge{display:inline-block;font:800 13px var(--sans);padding:4px 12px;border-radius:999px}
+.badge.ok{background:var(--c3);color:#fff}.badge.no{background:var(--c1);color:#fff}
+.vz{font-family:var(--fa);font-size:clamp(28px,4vw,46px);line-height:1.5;direction:rtl;text-align:right;margin:4px 0 0}
+.wt{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.wt button{background:none;border:2px solid #3a342c;color:var(--paper);border-radius:8px;font:700 12px var(--mono);padding:4px 10px;cursor:pointer}
+.wt button[aria-pressed=true]{border-color:var(--cc);background:var(--cc);color:var(--ink)}
+/* contribute */
+.sec{padding:84px 0;border-bottom:3px solid var(--rule)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:3px solid var(--ink);background:var(--card);margin-top:34px}
+.steps>*{min-width:0}
+.steps>div{padding:26px;border-inline-end:3px solid var(--ink)}
+.steps>div:last-child{border-inline-end:0}
+.steps b{font:400 italic 64px/1 var(--serif);display:block;margin-bottom:12px}
+html[data-lang=fa] .steps b{font:800 54px/1 var(--fa);font-style:normal}
+.steps h3{margin:0 0 6px;font-size:20px}
+.steps p{margin:0;color:var(--ink2)}
+.steps>div:nth-child(1) b{color:var(--c1)}.steps>div:nth-child(2) b{color:var(--c2)}.steps>div:nth-child(3) b{color:var(--c3)}
+.fmt{margin-top:22px;background:var(--ink);color:var(--paper);border-radius:14px;padding:18px 20px;font:13.5px/1.8 var(--mono);direction:rtl;text-align:right;overflow-x:auto;white-space:pre}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.two>*{min-width:0}
+.cc0{border:3px solid var(--ink);border-radius:18px;padding:26px;background:var(--c4);box-shadow:0 6px 0 var(--ink)}
+.cc0 b{font:900 44px/1 var(--sans);display:block;margin-bottom:8px}
+.cc0 p{margin:0;font-weight:600}
+/* faq */
+details{border-bottom:2px solid var(--ink);padding:2px 0}
+details:first-of-type{border-top:2px solid var(--ink)}
+summary{cursor:pointer;list-style:none;padding:18px 0;font-weight:900;font-size:18px;display:flex;justify-content:space-between;gap:20px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font:400 28px/1 var(--serif)}
+details[open] summary:after{content:"–"}
+details p{margin:0 0 18px;color:var(--ink2)}
+.note{margin-top:28px;font-size:14px;color:var(--mut);border-inline-start:4px solid var(--c1);padding:4px 14px}
+footer{padding:30px 0 40px;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
+@media (max-width:980px){.hero .wrap,.two{grid-template-columns:minmax(0,1fr)}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.tools{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:640px){.mast nav a.h,.gh{display:none}.wrap{padding:0 18px}.cards{grid-template-columns:minmax(0,1fr)}.steps{grid-template-columns:minmax(0,1fr)}.steps>div{border-inline-end:0;border-bottom:3px solid var(--ink)}.steps>div:last-child{border-bottom:0}.stats b{font-size:42px}.search kbd{display:none}.search input{font-size:16px}.search button{padding:10px 14px}.count{width:100%;margin:0}.hero{padding:40px 0}.play,.sec{padding:60px 0}}
+@media (prefers-reduced-motion:reduce){.ticker div{animation:none}}
+</style>
+</head>
+<body>
+<header class="mast"><div class="wrap">
+  <a class="logo" href="#"><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="6" fill="#ff5a36"/><rect x="34" y="2" width="28" height="28" rx="6" fill="#ffc83d"/><rect x="2" y="34" width="28" height="28" rx="6" fill="#2bb673"/><rect x="34" y="34" width="28" height="28" rx="6" fill="#3d7bff"/></svg><span lang="en">Awesome Persian Dev</span><span lang="fa">منابع توسعه‌دهندگان فارسی</span></a>
+  <nav>
+    <a class="h" href="#index"><span lang="en">Index</span><span lang="fa">فهرست</span></a>
+    <a class="h" href="#play"><span lang="en">Playground</span><span lang="fa">زمین بازی</span></a>
+    <a class="h" href="#contribute"><span lang="en">Contribute</span><span lang="fa">مشارکت</span></a>
+    <a class="h" href="#faq"><span lang="en">FAQ</span><span lang="fa">پرسش‌ها</span></a>
+    <a class="gh" href="https://github.com/mrzroot/awesome-persian-developer-resources">GitHub ★</a>
+    <div class="lang" role="group" aria-label="Language"><button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="fa">فا</button></div>
+  </nav>
+</div></header>
+<div class="ticker" aria-hidden="true"><div id="tick"></div></div>
+
+<main>
+<section class="hero"><div class="wrap">
+  <div>
+    <div class="kicker"><b>CC0</b><span lang="en">Curated index · Issue #1</span><span lang="fa">فهرست گلچین‌شده · شمارهٔ ۱</span></div>
+    <h1><span lang="en">The <span class="mk">awesome</span> list for <em>Persian</em> developers.</span><span lang="fa">فهرست <span class="mk">عالی</span> برای توسعه‌دهندگان <em>فارسی‌زبان</em>.</span></h1>
+    <p class="lead"><span lang="en">Developer DNS, Iranian APIs, Python packages, Persian fonts and Jalali date pickers, Persian NLP models, payment and SMS SDKs, and roadmaps, gathered in one public-domain list. Search it right here.</span><span lang="fa">DNSهای توسعه‌دهنده، APIهای ایرانی، پکیج‌های پایتون، فونت‌های فارسی و دیت‌پیکرهای شمسی، مدل‌های پردازش زبان فارسی، SDKهای پرداخت و پیامک و نقشه‌های راه؛ همه در یک فهرست با مالکیت عمومی. همین‌جا جستجو کنید.</span></p>
+    <form class="search" id="sform" role="search" onsubmit="return false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg>
+      <input id="q" type="search" autocomplete="off" aria-label="Search resources" placeholder="Search: font, jalali, zarinpal, DNS…" data-ph-en="Search: font, jalali, zarinpal, DNS…" data-ph-fa="جستجو: فونت، شمسی، زرین‌پال، DNS…">
+      <kbd>/</kbd>
+      <button type="button" id="go"><span lang="en">Search</span><span lang="fa">جستجو</span></button>
+    </form>
+  </div>
+  <div class="stats" aria-label="Stats">
+    <div class="s1"><b id="nItems">28</b><span lang="en">resources</span><span lang="fa">منبع</span></div>
+    <div><b id="n7">7</b><span lang="en">sections</span><span lang="fa">بخش</span></div>
+    <div><b>FA</b><span lang="en">Persian-first, RTL</span><span lang="fa">فارسی‌محور و راست‌به‌چپ</span></div>
+    <div class="s4"><b>CC0</b><span lang="en">public domain</span><span lang="fa">مالکیت عمومی</span></div>
+  </div>
+</div></section>
+
+<section class="idx" id="index"><div class="wrap">
+  <div class="bar" id="chips"></div>
+  <div id="list"></div>
+  <div class="empty" id="empty"><span lang="en">Nothing matches yet. Know a resource? Add it with a pull request.</span><span lang="fa">چیزی پیدا نشد. منبعی می‌شناسید؟ با یک Pull Request اضافه‌اش کنید.</span></div>
+</div></section>
+
+<section class="play" id="play"><div class="wrap">
+  <div class="kicker"><b><span lang="en">Try it</span><span lang="fa">امتحان کنید</span></b><span lang="en">What these packages do, live in your browser</span><span lang="fa">کار این پکیج‌ها، زنده در مرورگر</span></div>
+  <h2><span lang="en">The everyday Persian toolkit.</span><span lang="fa">جعبه‌ابزار روزمرهٔ فارسی.</span></h2>
+  <p class="sub"><span lang="en">Small demos of problems the listed libraries solve (Jalali dates, Persian digits, national ID checks, Arabic ی/ک cleanup and Vazirmatn type), written in plain JavaScript on this page. Nothing is sent anywhere.</span><span lang="fa">نمونه‌های کوچکی از مسائلی که کتابخانه‌های این فهرست حل می‌کنند (تاریخ شمسی، اعداد فارسی، بررسی کد ملی، اصلاح «ي/ك» عربی و فونت وزیرمتن) با جاوااسکریپت ساده در همین صفحه. هیچ داده‌ای جایی فرستاده نمی‌شود.</span></p>
+  <div class="tools">
+    <div class="tool" style="--cc:var(--c4)"><h3><i>jdatetime · khayyam</i><span lang="en">Gregorian → Jalali</span><span lang="fa">میلادی ← شمسی</span></h3>
+      <p class="h"><span lang="en">Pick a date. The browser's Persian calendar converts it.</span><span lang="fa">یک تاریخ انتخاب کنید؛ تقویم فارسی مرورگر تبدیلش می‌کند.</span></p>
+      <input type="date" id="gd" aria-label="Gregorian date"><div class="out" id="jd"></div></div>
+    <div class="tool" style="--cc:var(--c2)"><h3><i>persian-tools</i><span lang="en">National ID check</span><span lang="fa">اعتبارسنجی کد ملی</span></h3>
+      <p class="h"><span lang="en">The 10-digit checksum, accepting Persian or English digits.</span><span lang="fa">الگوریتم رقم کنترل ۱۰ رقمی؛ با اعداد فارسی یا انگلیسی.</span></p>
+      <input id="nid" inputmode="numeric" maxlength="10" value="0499370899" aria-label="National ID" dir="ltr"><div class="out l" id="nido"></div></div>
+    <div class="tool" style="--cc:var(--c3)"><h3><i>persian-tools</i><span lang="en">Digits &amp; ی/ک fixer</span><span lang="fa">اعداد و اصلاح ی/ک</span></h3>
+      <p class="h"><span lang="en">Converts digits to Persian and Arabic ي/ك to Persian ی/ک.</span><span lang="fa">اعداد را فارسی و «ي/ك» عربی را به «ی/ک» فارسی تبدیل می‌کند.</span></p>
+      <input id="fx" value="كتاب علي 1403 صفحه 25" aria-label="Text to normalise" dir="auto"><div class="out" id="fxo"></div></div>
+    <div class="tool" style="--cc:var(--c6)"><h3><i>Vazirmatn</i><span lang="en">Type tester</span><span lang="fa">آزمایش فونت</span></h3>
+      <p class="h"><span lang="en">This page self-hosts Vazirmatn. Type and switch weights.</span><span lang="fa">این صفحه وزیرمتن را خودش میزبانی می‌کند. بنویسید و وزن را عوض کنید.</span></p>
+      <input id="vzi" value="برنامه‌نویسی به زبان فارسی" aria-label="Sample text" dir="auto"><p class="vz" id="vz">برنامه‌نویسی به زبان فارسی</p>
+      <div class="wt" id="wt"><button type="button" data-w="400">400</button><button type="button" data-w="600">600</button><button type="button" data-w="800" aria-pressed="true">800</button></div></div>
+  </div>
+</div></section>
+
+<section class="sec" id="contribute"><div class="wrap">
+  <div class="kicker"><b>PR</b><span lang="en">Contribute</span><span lang="fa">مشارکت</span></div>
+  <h2><span lang="en">Know something awesome? Add it.</span><span lang="fa">چیز عالی‌ای می‌شناسید؟ اضافه‌اش کنید.</span></h2>
+  <div class="steps">
+    <div><b><span lang="en">1</span><span lang="fa">۱</span></b><h3>Fork</h3><p><span lang="en">Fork the repository on GitHub.</span><span lang="fa">مخزن را در گیت‌هاب Fork کنید.</span></p></div>
+    <div><b><span lang="en">2</span><span lang="fa">۲</span></b><h3><span lang="en">Add one line</span><span lang="fa">یک خط اضافه کنید</span></h3><p><span lang="en">Put the link in the right section of README.md, with a short Persian description.</span><span lang="fa">لینک را با یک توضیح کوتاه فارسی در بخش مناسب README.md بگذارید.</span></p></div>
+    <div><b><span lang="en">3</span><span lang="fa">۳</span></b><h3>Pull Request</h3><p><span lang="en">Open a PR. Small, focused additions get merged fastest.</span><span lang="fa">یک PR باز کنید؛ افزوده‌های کوچک و دقیق سریع‌تر ادغام می‌شوند.</span></p></div>
+  </div>
+  <div class="fmt">* **[نام ابزار (Tool Name)](https://example.com)**: توضیح کوتاه دربارهٔ اینکه چه مشکلی را حل می‌کند.</div>
+</div></section>
+
+<section class="sec" id="faq"><div class="wrap two">
+  <div>
+    <div class="kicker"><b>?</b><span lang="en">FAQ</span><span lang="fa">پرسش‌های رایج</span></div>
+    <h2><span lang="en">Fine print, in large type.</span><span lang="fa">ریزنویس‌ها، با خط درشت.</span></h2>
+    <div class="cc0"><b>CC0 1.0</b><p><span lang="en">The list is public domain. Copy it, translate it, ship it in your docs. No attribution needed (but a ★ helps others find it).</span><span lang="fa">این فهرست مالکیت عمومی است. کپی کنید، ترجمه کنید و در مستنداتتان بگذارید؛ ذکر منبع لازم نیست (ولی یک ★ به دیده‌شدنش کمک می‌کند).</span></p></div>
+  </div>
+  <div>
+    <details open><summary><span lang="en">Where does this data come from?</span><span lang="fa">داده‌های این صفحه از کجا می‌آید؟</span></summary><p><span lang="en">From the repository's README. This page is a searchable view of the same list; the README is the source of truth.</span><span lang="fa">از README مخزن. این صفحه نمای قابل جستجوی همان فهرست است و مرجع اصلی README است.</span></p></details>
+    <details><summary><span lang="en">Are the developer DNS services safe?</span><span lang="fa">DNSهای توسعه‌دهنده امن‌اند؟</span></summary><p><span lang="en">They are third-party resolvers that see the domains you look up. Use them for package registries and build tooling, not as a privacy tool, and check each provider's site because addresses change.</span><span lang="fa">این‌ها ریزالورهای شخص ثالث‌اند و دامنه‌هایی را که جستجو می‌کنید می‌بینند. از آن‌ها برای رجیستری پکیج‌ها و ابزار بیلد استفاده کنید، نه برای حریم خصوصی، و چون آدرس‌ها تغییر می‌کنند سایت هر سرویس را چک کنید.</span></p></details>
+    <details><summary><span lang="en">Is this list affiliated with any of these companies?</span><span lang="fa">این فهرست وابسته به این شرکت‌هاست؟</span></summary><p><span lang="en">No. It's an independent, community list with no sponsored entries. Names and trademarks belong to their owners.</span><span lang="fa">نه. فهرستی مستقل و جامعه‌محور است و هیچ مورد تبلیغاتی ندارد. نام‌ها و نشان‌ها متعلق به صاحبانشان است.</span></p></details>
+    <details><summary><span lang="en">Something is outdated or broken. What now?</span><span lang="fa">چیزی قدیمی یا خراب است. چه کنم؟</span></summary><p><span lang="en">Open an issue or a PR that fixes or removes it. Corrections are as welcome as additions.</span><span lang="fa">یک Issue یا PR برای اصلاح یا حذفش باز کنید. اصلاح‌ها به اندازهٔ افزوده‌ها ارزشمندند.</span></p></details>
+    <details><summary><span lang="en">Why is the list in Persian?</span><span lang="fa">چرا فهرست فارسی است؟</span></summary><p><span lang="en">It's written for Persian-speaking developers first. This site adds English descriptions so anyone can browse it.</span><span lang="fa">اول برای توسعه‌دهندگان فارسی‌زبان نوشته شده؛ این سایت توضیح انگلیسی هم اضافه کرده تا همه بتوانند مرورش کنند.</span></p></details>
+    <p class="note"><span lang="en">Listing a service is not an endorsement. Follow the terms of each service and the laws that apply to you.</span><span lang="fa">آمدن نام یک سرویس به معنای تأیید آن نیست. قوانین هر سرویس و مقررات مربوط به خودتان را رعایت کنید.</span></p>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <span><span lang="en">Curated by</span><span lang="fa">گردآوری:</span> <a href="https://mrzroot.github.io/">M-R-Z (@mrzroot)</a> · CC0-1.0</span>
+  <span><a href="https://github.com/mrzroot/awesome-persian-developer-resources">GitHub</a> · <a href="https://mrzroot.github.io/projects/"><span lang="en">More projects</span><span lang="fa">پروژه‌های دیگر</span></a></span>
+</div></footer>
+
+<script>
+(function(){
+  var R=document.documentElement,$=function(s){return document.querySelector(s)},$$=function(s){return Array.prototype.slice.call(document.querySelectorAll(s))};
+  /* data mirrors README.md */
+  var CATS=[
+    {id:'dns',c:'var(--c1)',e:'🛡️',en:'Developer DNS & unblock tools',fa:'ابزارها و DNSهای رفع تحریم توسعه‌دهندگان'},
+    {id:'api',c:'var(--c2)',e:'🌐',en:'Iranian web services & APIs',fa:'وب‌سرویس‌ها و APIهای کاربردی ایران'},
+    {id:'py',c:'var(--c3)',e:'🐍',en:'Python packages for Iranian projects',fa:'پکیج‌های برتر پایتون برای پروژه‌های ایرانی'},
+    {id:'fe',c:'var(--c4)',e:'🎨',en:'Front-end: Persian fonts & Jalali date pickers',fa:'فرانت‌اند، فونت‌ها و دیت‌پیکرهای شمسی'},
+    {id:'ai',c:'var(--c5)',e:'🤖',en:'AI & Persian NLP',fa:'هوش مصنوعی و پردازش متن فارسی'},
+    {id:'pay',c:'var(--c6)',e:'💳',en:'Payments & SMS',fa:'پرداخت آنلاین و پیامک'},
+    {id:'learn',c:'var(--c7)',e:'📚',en:'Books, roadmaps & cheat sheets',fa:'کتاب‌ها، نقشه‌های راه و چیت‌شیت‌ها'}];
+  var I=[
+    ['dns','Shecan','شکن (Shecan)','','178.22.122.100 185.51.200.2','Gets Docker, Gradle, Android, Maven and npm working despite sanctions.','عبور از تحریم‌های Docker، Gradle، Android، Maven و NPM'],
+    ['dns','403.online','۴۰۳ آنلاین (403.online)','','10.202.10.202 10.202.10.102','Unblocks cloud platforms and Git hosts directly.','رفع تحریم مستقیم پلتفرم‌های ابری و مخازن گیت'],
+    ['dns','Electro','الکترو (Electro)','','78.157.42.101 78.157.42.100','DNS and client for unblocking games and developer tools.','DNS و کلاینت ضد تحریم گیم و ابزارهای توسعه'],
+    ['dns','Begzar','بگذر (Begzar)','','185.55.226.26 185.55.225.25','Fast, stable DNS for developers.','DNS پرسرعت و پایدار برای توسعه‌دهندگان'],
+    ['dns','Radar Game','رادار گیم (Radar)','','10.202.10.10 10.202.10.11','Lower ping and unblocked streaming services.','بهینه‌سازی پینگ و باز کردن سرویس‌های استریم'],
+    ['api','Neshan API','نقشه و مسیریابی نشان (Neshan API)','https://platform.neshan.org/','','Maps, address search, geocoding and traffic estimates.','وب‌سرویس نقشه، جستجوی آدرس، ژئوکدینگ و تخمین ترافیک'],
+    ['api','Balad API','نقشه بلد (Balad API)','https://balad.ir/','','Place search and city routing.','وب‌سرویس جستجوی مکان و مسیریابی شهری'],
+    ['api','Calendar & holidays service','وب‌سرویس تقویم و مناسبت‌ها','','','Official holidays and Jalali, Hijri and Gregorian date conversion.','استخراج تعطیلات رسمی و تبدیل تاریخ هجری شمسی، قمری و میلادی'],
+    ['api','Postal code & address lookup','وب‌سرویس استعلام کد پستی و آدرس','https://post.ir','','Postal code validation and neighbourhood breakdown.','اعتبارسنجی کد پستی و تفکیک محله‌های شهری'],
+    ['api','Currency & crypto rates','وب‌سرویس نرخ ارز و رمزارزها','https://nobitex.ir','','Live prices for USDT, Bitcoin and other cryptocurrencies.','دریافت زنده قیمت تتر، بیت‌کوین و ارزهای دیجیتال'],
+    ['py','jdatetime','jdatetime','https://pypi.org/project/jdatetime/','pip install jdatetime','Full Jalali date and time handling, compatible with datetime.','دستکاری و مدیریت کامل تاریخ و زمان جلالی با سازگاری ۱۰۰٪ با datetime'],
+    ['py','persian-tools','persian-tools','https://pypi.org/project/persian-tools/','pip install persian-tools','Persian digits, national ID, IBAN (Sheba) and card validation, ی/ک fixes.','تبدیل اعداد، اعتبارسنجی کد ملی، شبا و کارت بانکی و تصحیح «ی» و «ک»'],
+    ['py','khayyam','khayyam','https://pypi.org/project/khayyam/','pip install khayyam','A fast, mathematical Jalali calendar for precise date arithmetic.','تقویم ریاضیاتی و سریع خیام برای محاسبات دقیق تاریخ شمسی'],
+    ['py','zarinpal-python / zibal-sdk','zarinpal-python / zibal-sdk','','','Packages for connecting to the Zarinpal and Zibal gateways.','پکیج‌های اتصال آسان به درگاه‌های پرداخت آنلاین'],
+    ['fe','Vazirmatn','وزیرمتن (Vazirmatn)','https://github.com/rastikerdar/vazirmatn','','By Saber Rastikerdar; the de-facto Persian web font, on Google Fonts.','اثر صابر راستی‌کردار؛ استاندارد شمارهٔ یک وب فارسی، در Google Fonts'],
+    ['fe','Shabnam','شبنم (Shabnam)','https://github.com/rastikerdar/shabnam-font','','A clean, readable, modern face.','فونتی تمیز، خوانا و مدرن'],
+    ['fe','Sahel','ساحل (Sahel)','https://github.com/rastikerdar/sahel-font','','Lovely for long-form text and blog posts.','فونت زیبا و مناسب برای متون طولانی و مقالات وبلاگی'],
+    ['fe','Samim','صمیم (Samim)','https://github.com/rastikerdar/samim-font','','Simple and minimal, for dashboards and admin panels.','فونتی ساده و مینیمال برای داشبوردها و پنل‌های مدیریتی'],
+    ['fe','react-multi-date-picker','react-multi-date-picker','https://github.com/shahabyazdi/react-multi-date-picker','','Flexible React date picker with Jalali, Gregorian and Hijri calendars.','منعطف‌ترین دیت‌پیکر React با تقویم شمسی، میلادی و قمری'],
+    ['fe','persian-datepicker','persian-datepicker','https://github.com/babakhani/pwt.datepicker','','Classic jQuery/JS Jalali picker with dark and light themes.','تقویم جی‌کوئری و جاوااسکریپت کلاسیک با تم تیره و روشن'],
+    ['ai','Hazm','هضم (Hazm)','https://github.com/roshan-research/hazm','pip install hazm','The best-known Persian text toolkit: normalising, stemming, tokenising.','معروف‌ترین کتابخانهٔ پردازش متن، ریشه‌یابی و تقطیع کلمات فارسی'],
+    ['ai','ParsBERT','ParsBERT','https://github.com/hooshvare/parsbert','','A BERT transformer trained on millions of Persian documents.','مدل ترنسفورمر BERT آموزش‌دیده روی میلیون‌ها سند فارسی'],
+    ['ai','Persian STT & TTS','Persian STT & TTS','https://huggingface.co/models?language=fa','','Speech-to-text and text-to-speech models for Persian on Hugging Face.','مدل‌های گفتار به متن و بالعکس برای فارسی در HuggingFace'],
+    ['pay','ZarinPal REST API','زرین‌پال (ZarinPal REST API)','','','Docs for the direct and intermediary payment gateway.','مستندات درگاه پرداخت مستقیم و واسط'],
+    ['pay','Zibal','زیبال (Zibal)','','','Payment gateway, settlement splitting and bank inquiries.','درگاه پرداخت، تسهیم و استعلام بانکی'],
+    ['pay','Kavenegar SDKs','کاوه‌نگار (Kavenegar SDKs)','','','OTP SMS libraries for Python, Node, Laravel and Go.','کتابخانه‌های ارسال پیامک OTP برای پایتون، نود، لاراول و Go'],
+    ['learn','roadmap.sh','نقشه راه مهندسی نرم‌افزار','https://roadmap.sh','','Front-end, back-end, DevOps and AI learning paths.','مسیر جامع فرانت‌اند، بک‌اند، دوآپس و هوش مصنوعی'],
+    ['learn','Docker & Linux cheat sheet','چیت‌شیت جامع داکر و لینوکس','','','Everyday commands and server troubleshooting on restricted networks.','دستورات روزمره و عیب‌یابی سرورها در شرایط محدودیت شبکه']];
+  $('#nItems').textContent=I.length;
+  var lang='en',cur='all';
+  var TITLES={en:'Awesome Persian Developer Resources · A curated index for Iranian developers',fa:'منابع عالی توسعه‌دهندگان فارسی‌زبان · فهرست گلچین‌شده'};
+  var FD=function(n){return String(n).replace(/\d/g,function(d){return '۰۱۲۳۴۵۶۷۸۹'[d]})};
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function norm(s){return String(s).toLowerCase().replace(/ي/g,'ی').replace(/ك/g,'ک').replace(/[\u200c\s]+/g,' ')}
+  function hi(s,q){s=esc(s);if(!q)return s;var i=norm(s).indexOf(q);return i<0?s:s.slice(0,i)+'<mark>'+s.slice(i,i+q.length)+'</mark>'+s.slice(i+q.length)}
+  function chips(){var h='<button class="chip" type="button" data-c="all" aria-pressed="'+(cur==='all')+'">'+(lang==='fa'?'همه':'All')+' <small>'+(lang==='fa'?FD(I.length):I.length)+'</small></button>';
+    CATS.forEach(function(c){var n=I.filter(function(x){return x[0]===c.id}).length;h+='<button class="chip" type="button" data-c="'+c.id+'" aria-pressed="'+(cur===c.id)+'"><i style="background:'+c.c+'"></i>'+(lang==='fa'?c.fa.split('،')[0]:c.en.split(/ [&:]/)[0])+' <small>'+(lang==='fa'?FD(n):n)+'</small></button>'});
+    h+='<span class="count" id="cnt"></span>';$('#chips').innerHTML=h;
+    $$('#chips .chip').forEach(function(b){b.onclick=function(){cur=b.getAttribute('data-c');chips();render()}})}
+  function render(){var q=norm($('#q').value.trim()),h='',tot=0;
+    CATS.forEach(function(c,ci){if(cur!=='all'&&cur!==c.id)return;
+      var it=I.filter(function(x){return x[0]===c.id&&(!q||norm(x.slice(1).join(' ')).indexOf(q)>=0)});if(!it.length)return;tot+=it.length;
+      h+='<div class="cat" style="--cc:'+c.c+'"><h2><span class="no">'+(lang==='fa'?FD(ci+1):'0'+(ci+1))+'</span>'+c.e+' '+esc(lang==='fa'?c.fa:c.en)+'<small>'+(lang==='fa'?FD(it.length):it.length)+'</small></h2><div class="cards">';
+      it.forEach(function(x){var nm=lang==='fa'?x[2]:x[1],d=lang==='fa'?x[6]:x[5];
+        h+='<article class="card"><h3>'+(x[3]?'<a href="'+x[3]+'" rel="noopener">'+hi(nm,q)+'</a>':hi(nm,q))+'</h3><p>'+hi(d,q)+'</p><div class="meta">';
+        if(x[4]){var parts=c.id==='dns'?x[4].split(' '):[x[4]];parts.forEach(function(p){h+='<code>'+esc(p)+'</code>'});h+='<button class="cp" type="button" data-cp="'+esc(c.id==='dns'?parts.join(', '):x[4])+'">'+(lang==='fa'?'کپی':'Copy')+'</button>'}
+        if(x[3])h+='<a class="go" href="'+x[3]+'" rel="noopener">'+esc(x[3].replace(/^https?:\/\//,'').replace(/\/$/,'').slice(0,34))+' ↗</a>';
+        h+='</div></article>'});
+      h+='</div></div>'});
+    $('#list').innerHTML=h;$('#empty').style.display=tot?'none':'block';
+    $('#cnt').textContent=lang==='fa'?FD(tot)+' نتیجه':tot+' result'+(tot===1?'':'s');
+    $$('.cp').forEach(function(b){b.onclick=function(){var t=b.getAttribute('data-cp');if(navigator.clipboard)navigator.clipboard.writeText(t).then(function(){b.classList.add('ok');b.textContent='✓';setTimeout(function(){b.classList.remove('ok');b.textContent=lang==='fa'?'کپی':'Copy'},1300)})}})}
+  function tick(){var s='';for(var k=0;k<2;k++)I.forEach(function(x){s+='<span><i>●</i> '+esc(lang==='fa'?x[2]:x[1])+'</span>'});$('#tick').innerHTML=s}
+  function setLang(l,save){lang=l;R.setAttribute('data-lang',l);R.lang=l;R.dir=l==='fa'?'rtl':'ltr';document.title=TITLES[l];
+    $$('[data-set-lang]').forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-set-lang')===l))});
+    $('#q').placeholder=$('#q').getAttribute('data-ph-'+l);$('#nItems').textContent=l==='fa'?FD(I.length):I.length;$('#n7').textContent=l==='fa'?'۷':'7';chips();render();tick();tools();
+    if(save)try{localStorage.setItem('mrz-lang',l)}catch(e){}}
+  $('#q').addEventListener('input',render);$('#go').onclick=function(){render();$('#index').scrollIntoView()};
+  $('#q').addEventListener('keydown',function(e){if(e.key==='Enter'){render();$('#index').scrollIntoView()}});
+  document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'){e.preventDefault();$('#q').focus()}});
+  try{var qq=new URLSearchParams(location.search).get('q');if(qq)$('#q').value=qq}catch(e){}
+  /* playground */
+  var gd=$('#gd');gd.valueAsDate=new Date();
+  function jal(){var v=gd.value;if(!v){$('#jd').textContent='';return}var p=v.split('-'),d=new Date(Date.UTC(+p[0],+p[1]-1,+p[2],12));
+    var f=new Intl.DateTimeFormat('fa-IR-u-ca-persian',{timeZone:'UTC',weekday:'long',year:'numeric',month:'long',day:'numeric'}).format(d),
+        n=new Intl.DateTimeFormat('en-US-u-ca-persian',{timeZone:'UTC',year:'numeric',month:'2-digit',day:'2-digit'}).format(d);
+    $('#jd').innerHTML=esc(f)+'<small>'+esc(n.replace(/\s*AP$/,''))+' (Jalali, AP)</small>'}
+  function toEn(s){return s.replace(/[۰-۹]/g,function(c){return '۰۱۲۳۴۵۶۷۸۹'.indexOf(c)}).replace(/[٠-٩]/g,function(c){return '٠١٢٣٤٥٦٧٨٩'.indexOf(c)})}
+  function nidOk(s){s=toEn(s).replace(/\D/g,'');if(!/^\d{10}$/.test(s)||/^(\d)\1{9}$/.test(s))return false;var sum=0;for(var i=0;i<9;i++)sum+=+s[i]*(10-i);var r=sum%11,c=+s[9];return r<2?c===r:c===11-r}
+  function nid(){var v=$('#nid').value,ok=nidOk(v),fa=lang==='fa';$('#nido').innerHTML=v?'<span class="badge '+(ok?'ok':'no')+'">'+(ok?(fa?'✓ معتبر':'✓ valid'):(fa?'✗ نامعتبر':'✗ invalid'))+'</span>':''}
+  function fx(){var v=$('#fx').value.replace(/ي/g,'ی').replace(/ك/g,'ک').replace(/\d/g,function(d){return '۰۱۲۳۴۵۶۷۸۹'[d]});$('#fxo').textContent=v}
+  function tools(){jal();nid();fx()}
+  gd.addEventListener('input',jal);$('#nid').addEventListener('input',nid);$('#fx').addEventListener('input',fx);
+  $('#vzi').addEventListener('input',function(){$('#vz').textContent=this.value||' '});
+  $$('#wt button').forEach(function(b){b.onclick=function(){$$('#wt button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});$('#vz').style.fontWeight=b.getAttribute('data-w')}});
+  $('#vz').style.fontWeight=800;
+  setLang(R.getAttribute('data-lang')||'en');
+  $$('[data-set-lang]').forEach(function(b){b.addEventListener('click',function(){setLang(b.getAttribute('data-set-lang'),true)})});
+})();
+</script>
+</body>
+</html>
