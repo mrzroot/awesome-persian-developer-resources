@@ -2,10 +2,13 @@
 <html lang="en" data-lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
+<script>/*mrz-theme*/(function(){var d=document.documentElement,m='system';try{m=localStorage.getItem('mrz-theme')||'system'}catch(e){}var q=window.matchMedia?matchMedia('(prefers-color-scheme: dark)'):null;var t=m==='light'||m==='dark'?m:(q&&q.matches?'dark':'light');d.setAttribute('data-theme',t);d.style.colorScheme=t})()</script>
+<meta name="theme-color" content="#f7f5ef">
+<meta name="color-scheme" content="light dark">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Awesome Persian Developer Resources · A curated index for Iranian developers</title>
 <meta name="description" content="A searchable, CC0 index of tools, Iranian APIs, Python packages, Persian fonts and date pickers, Persian NLP, payment and SMS SDKs, roadmaps and developer DNS services for Iranian developers.">
-<meta name="theme-color" content="#f7f1e6">
+
 <meta property="og:title" content="Awesome Persian Developer Resources · منابع توسعه‌دهندگان فارسی‌زبان">
 <meta property="og:description" content="A searchable, CC0 index of the tools, APIs, packages and fonts Iranian developers actually use.">
 <meta property="og:type" content="website">
@@ -158,6 +161,47 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
 @media (max-width:640px){.mast nav a.h,.gh{display:none}.wrap{padding:0 18px}.cards{grid-template-columns:minmax(0,1fr)}.steps{grid-template-columns:minmax(0,1fr)}.steps>div{border-inline-end:0;border-bottom:3px solid var(--ink)}.steps>div:last-child{border-bottom:0}.stats b{font-size:42px}.search kbd{display:none}.search input{font-size:16px}.search button{padding:10px 14px}.count{width:100%;margin:0}.hero{padding:40px 0}.play,.sec{padding:60px 0}}
 @media (prefers-reduced-motion:reduce){.ticker div{animation:none}}
 </style>
+<style id="mrz-theme-css">
+/* mrz theme toggle */
+.mrz-tt{all:unset;box-sizing:border-box;cursor:pointer;display:inline-grid;place-items:center;flex:none;width:34px;height:34px;border-radius:999px;color:inherit;border:1.5px solid currentColor;transition:transform .2s,background-color .2s}
+.mrz-tt:hover{transform:rotate(-12deg)}.mrz-tt:focus-visible{outline:2px solid #1fb5ad;outline-offset:3px}
+.mrz-tt svg{width:17px;height:17px;display:block}
+html[data-theme=dark] .mrz-tt .i-moon,html:not([data-theme=dark]) .mrz-tt .i-sun{display:none}
+/* Awesome Persian Dev · zine layout on the turquoise + gold palette */
+html[data-theme=light]{--paper:#f7f5ef;--paper2:#efeadc;--card:#fffdf8;--ink:#0b1230;--ink2:#3a4363;--mut:#5b6383;--rule:#0b1230;
+--c1:#c2410c;--c2:#2f5bc7;--c3:#0b7a4f;--c4:#e8b04b;--c5:#7a3fd0;--c6:#b8255c;--c7:#0a7671;
+--slab:#efeadc;--slab2:#fffdf8;--slab-line:#d3cab3;--slab-fg:#0b1230;--slab-mut:#4a5370;--in-bg:#f7f5ef}
+html[data-theme=dark]{--paper:#070b1a;--paper2:#121a33;--card:#0e1428;--ink:#eceff7;--ink2:#b4bcd6;--mut:#949dbc;--rule:#2f3a66;
+--c1:#ff7a5c;--c2:#7fa6ff;--c3:#4fd69c;--c4:#e8b04b;--c5:#b98aff;--c6:#ff6fa6;--c7:#3fd0c9;
+--slab:#0b1124;--slab2:#121a33;--slab-line:#2a3560;--slab-fg:#eceff7;--slab-mut:#a9b1cc;--in-bg:#070b1a}
+html[data-theme] .ticker{background:var(--c4);color:#1a1200;border-color:var(--rule)}
+html[data-theme] .ticker i{color:#0b1230}
+html[data-theme] .stats .s1{background:#c2410c;color:#fff}html[data-theme] .stats .s1 span{color:#fff}
+html[data-theme] .stats .s4{background:#0b7a4f;color:#fff}html[data-theme] .stats .s4 span{color:#fff}
+html[data-theme] .play{background:var(--slab);color:var(--slab-fg)}
+html[data-theme] .play .kicker b{color:#0b1230}
+html[data-theme] .play .sub{color:var(--slab-mut)}
+html[data-theme] .tool{background:var(--slab2);border-color:var(--slab-line)}
+html[data-theme] .tool p.h,html[data-theme] .out small{color:var(--slab-mut)}
+html[data-theme] .tool h3 i{color:#0b1230}
+html[data-theme] .tool input{background:var(--in-bg);border-color:var(--slab-line);color:var(--slab-fg)}
+html[data-theme] .wt button{border-color:var(--slab-line);color:var(--slab-fg)}
+html[data-theme] .wt button[aria-pressed=true]{color:#0b1230}
+html[data-theme] .badge.ok{background:#0b7a4f;color:#fff}html[data-theme] .badge.no{background:#c2410c;color:#fff}
+html[data-theme] .fmt{background:var(--slab2);color:var(--slab-fg);border:2px solid var(--slab-line)}
+html[data-theme=dark] .cc0{color:#0b1230;box-shadow:0 6px 0 #2f3a66}
+html[data-theme=dark] .cc0 *{color:#0b1230}
+html[data-theme=dark] .search,html[data-theme=dark] .cc0{border-color:#2f3a66}
+html[data-theme=dark] .search{box-shadow:0 6px 0 #2f3a66}
+html[data-theme=dark] mark{color:#0b1230}
+html[data-theme=dark] .kicker b{color:#0b1230}
+html[data-theme=light] .tool h3 i,html[data-theme=light] .wt button[aria-pressed=true]{color:#fff}
+html[data-theme=light] .cc0 .tool h3 i{color:#fff}
+html[data-theme=light] h2 .no{color:#8a5c0c}
+html[data-theme] .tool[style*="c4"] h3 i,html[data-theme] .tool[style*="c4"] .wt button[aria-pressed=true]{color:#1a1200}
+html[data-theme=dark] h1 .mk{color:#fff7e6;background:linear-gradient(transparent 58%,rgba(232,176,75,.42) 58%,rgba(232,176,75,.42) 92%,transparent 92%)}
+html[data-theme=light] [style*="--c4"] .go,html[data-theme=light] [style*="--c4"] .no{color:#8a5c0c}
+</style>
 </head>
 <body>
 <header class="mast"><div class="wrap">
@@ -168,7 +212,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
     <a class="h" href="#contribute"><span lang="en">Contribute</span><span lang="fa">مشارکت</span></a>
     <a class="h" href="#faq"><span lang="en">FAQ</span><span lang="fa">پرسش‌ها</span></a>
     <a class="gh" href="https://github.com/mrzroot/awesome-persian-developer-resources">GitHub ★</a>
-    <div class="lang" role="group" aria-label="Language"><button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="fa">فا</button></div>
+    <button type="button" class="mrz-tt" data-theme-toggle aria-label="Switch to dark mode" title="Switch to dark mode"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></g></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg></button><div class="lang" role="group" aria-label="Language"><button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="fa">فا</button></div>
   </nav>
 </div></header>
 <div class="ticker" aria-hidden="true"><div id="tick"></div></div>
@@ -347,5 +391,16 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
   $$('[data-set-lang]').forEach(function(b){b.addEventListener('click',function(){setLang(b.getAttribute('data-set-lang'),true)})});
 })();
 </script>
+<script>/*mrz-theme-toggle*/(function(){var d=document.documentElement,q=window.matchMedia?matchMedia('(prefers-color-scheme: dark)'):null;
+function fa(){return d.getAttribute('data-lang')==='fa'||d.lang==='fa'}
+function sync(){var t=d.getAttribute('data-theme')==='dark'?'dark':'light',f=fa();
+document.querySelectorAll('[data-theme-toggle]').forEach(function(x){var l=t==='dark'?(f?'\u062a\u063a\u06cc\u06cc\u0631 \u0628\u0647 \u062d\u0627\u0644\u062a \u0631\u0648\u0634\u0646':'Switch to light mode'):(f?'\u062a\u063a\u06cc\u06cc\u0631 \u0628\u0647 \u062d\u0627\u0644\u062a \u062a\u06cc\u0631\u0647':'Switch to dark mode');x.setAttribute('aria-label',l);x.title=l;x.setAttribute('aria-pressed',t==='dark'?'true':'false')});
+document.querySelectorAll('picture source[media*="prefers-color-scheme"]').forEach(function(s){if(!s.getAttribute('data-mq'))s.setAttribute('data-mq',s.media);var wd=/dark/.test(s.getAttribute('data-mq'));s.media=(wd===(t==='dark'))?'all':'not all'});
+var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',t==='dark'?'#070b1a':'#f7f5ef')}
+function set(t,save){d.setAttribute('data-theme',t);d.style.colorScheme=t;if(save){try{localStorage.setItem('mrz-theme',t)}catch(e){}}try{document.dispatchEvent(new CustomEvent('mrz-theme',{detail:t}))}catch(e){}}
+document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-theme-toggle]');if(!b)return;set(d.getAttribute('data-theme')==='dark'?'light':'dark',true)});
+if(q&&q.addEventListener)q.addEventListener('change',function(){var m;try{m=localStorage.getItem('mrz-theme')}catch(e){}if(m!=='light'&&m!=='dark')set(q.matches?'dark':'light',false)});
+window.addEventListener('storage',function(e){if(e.key==='mrz-theme'){var m=e.newValue;set(m==='light'||m==='dark'?m:(q&&q.matches?'dark':'light'),false)}});
+if(window.MutationObserver)new MutationObserver(sync).observe(d,{attributes:true,attributeFilter:['data-lang','lang','data-theme']});sync()})()</script>
 </body>
 </html>
