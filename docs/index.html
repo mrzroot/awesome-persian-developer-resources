@@ -202,7 +202,7 @@ html[data-theme] .tool[style*="c4"] h3 i,html[data-theme] .tool[style*="c4"] .wt
 html[data-theme=dark] h1 .mk{color:#fff7e6;background:linear-gradient(transparent 58%,rgba(232,176,75,.42) 58%,rgba(232,176,75,.42) 92%,transparent 92%)}
 html[data-theme=light] [style*="--c4"] .go,html[data-theme=light] [style*="--c4"] .no{color:#8a5c0c}
 </style>
-</head>
+<link rel="preload" href="fonts/playfair-display-700.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/playfair-display-700-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="identity.css"></head>
 <body>
 <header class="mast"><div class="wrap">
   <a class="logo" href="#"><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="6" fill="#ff5a36"/><rect x="34" y="2" width="28" height="28" rx="6" fill="#ffc83d"/><rect x="2" y="34" width="28" height="28" rx="6" fill="#2bb673"/><rect x="34" y="34" width="28" height="28" rx="6" fill="#3d7bff"/></svg><span lang="en">Awesome Persian Dev</span><span lang="fa">منابع توسعه‌دهندگان فارسی</span></a>
@@ -402,5 +402,5 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
 if(q&&q.addEventListener)q.addEventListener('change',function(){var m;try{m=localStorage.getItem('mrz-theme')}catch(e){}if(m!=='light'&&m!=='dark')set(q.matches?'dark':'light',false)});
 window.addEventListener('storage',function(e){if(e.key==='mrz-theme'){var m=e.newValue;set(m==='light'||m==='dark'?m:(q&&q.matches?'dark':'light'),false)}});
 if(window.MutationObserver)new MutationObserver(sync).observe(d,{attributes:true,attributeFilter:['data-lang','lang','data-theme']});sync()})()</script>
-</body>
+<script src="fx.js" defer></script></body>
 </html>
