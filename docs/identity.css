@@ -47,3 +47,11 @@ canvas.fx{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-eve
 @media(prefers-reduced-motion:reduce){.stats>div{animation:none}h1 .mk{animation:none;background-size:100% 100%}}
 /* dark-mode contrast: pink fill needs dark text */
 html[data-theme=dark] .chip:hover,html[data-theme=dark] .chip[aria-pressed=true],html[data-theme=dark] .chip.on,html[data-theme=dark] .ticker{color:#2a0f1a!important}
+/* QA: text contrast (AA) */
+.chip:hover small,.chip[aria-pressed=true] small,.chip.on small{opacity:1}
+html[data-theme=light] #cnt{color:#7e5a68}
+html[data-theme=light] .play .kicker b{color:#fff}
+html[data-theme=dark] #go,html[data-theme=dark] #go span{color:#2a0f1a}
+html[data-theme=dark] .cat h2 .no{color:color-mix(in srgb,var(--cc),#fff 45%)}
+html[data-theme=dark] .cc0,html[data-theme=dark] .cc0 b,html[data-theme=dark] .cc0 p{color:#fbe9ef}
+html[data-theme=dark] .cc0 p *,html[data-theme=dark] .cc0 b *{color:#fbe9ef}
