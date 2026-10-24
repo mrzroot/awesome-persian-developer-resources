@@ -55,3 +55,6 @@ html[data-theme=dark] #go,html[data-theme=dark] #go span{color:#2a0f1a}
 html[data-theme=dark] .cat h2 .no{color:color-mix(in srgb,var(--cc),#fff 45%)}
 html[data-theme=dark] .cc0,html[data-theme=dark] .cc0 b,html[data-theme=dark] .cc0 p{color:#fbe9ef}
 html[data-theme=dark] .cc0 p *,html[data-theme=dark] .cc0 b *{color:#fbe9ef}
+
+/* QA: keep the "A" (automatic) badge anchored to the theme button */
+html .mrz-tt{position:relative}
