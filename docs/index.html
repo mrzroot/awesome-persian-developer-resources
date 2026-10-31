@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-lang="en" dir="ltr">
+<html lang="fa" data-lang="fa" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="theme-color" content="#17090f" media="(prefers-color-scheme: dark)">
@@ -16,7 +16,7 @@
 <meta property="og:url" content="https://mrzroot.github.io/awesome-persian-developer-resources/">
 <link rel="canonical" href="https://mrzroot.github.io/awesome-persian-developer-resources/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<script>(function(){var d=document.documentElement,l='en';try{l=new URLSearchParams(location.search).get('lang')||localStorage.getItem('mrz-lang')||'en'}catch(e){}if(l==='fa'){d.lang='fa';d.dir='rtl';d.setAttribute('data-lang','fa')}})()</script>
+<script>(function(){var d=document.documentElement,l='fa';try{l=new URLSearchParams(location.search).get('lang')||localStorage.getItem('mrz-lang')||'fa'}catch(e){}if(l!=='en')l='fa';d.lang=l;d.dir=l==='fa'?'rtl':'ltr';d.setAttribute('data-lang',l)})()</script>
 <style>
 @font-face{font-family:Vazirmatn;src:url(fonts/vazirmatn-arabic.woff2) format('woff2');font-weight:400 800;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+200C-200E,U+FB50-FDFF,U+FE70-FEFC}
 :root{--paper:#f7f1e6;--paper2:#efe6d6;--card:#fffdf8;--ink:#141210;--ink2:#3b352e;--mut:#6f665b;--rule:#141210;
@@ -391,7 +391,7 @@ html[data-theme=light] [style*="--c4"] .go,html[data-theme=light] [style*="--c4"
   $('#vzi').addEventListener('input',function(){$('#vz').textContent=this.value||' '});
   $$('#wt button').forEach(function(b){b.onclick=function(){$$('#wt button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});$('#vz').style.fontWeight=b.getAttribute('data-w')}});
   $('#vz').style.fontWeight=800;
-  setLang(R.getAttribute('data-lang')||'en');
+  setLang(R.getAttribute('data-lang')||'fa');
   $$('[data-set-lang]').forEach(function(b){b.addEventListener('click',function(){setLang(b.getAttribute('data-set-lang'),true)})});
 })();
 </script>
