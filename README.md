@@ -1,6 +1,14 @@
+<p align="center"><img src=".github/assets/banner.svg" alt="Awesome Persian Dev: Curated tools, APIs and guides for Persian-speaking developers" width="100%"></p>
+
+<p align="center">
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/mrzroot/awesome-persian-developer-resources?style=flat-square"></a>
+  <a href="https://github.com/mrzroot/awesome-persian-developer-resources/commits"><img alt="Last commit" src="https://img.shields.io/github/last-commit/mrzroot/awesome-persian-developer-resources?style=flat-square"></a>
+</p>
+
+<p align="center"><a href="https://mrzroot.github.io/awesome-persian-developer-resources/">Website</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="CONTRIBUTING.md">Contributing</a></p>
+
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,25,45&height=220&section=header&text=Awesome%20Persian%20Developer%20Resources&fontSize=32&fontColor=ffffff&fontAlignY=38&desc=%E2%9A%A1%20Curated%20Collection%20of%20Top%20Dev%20Tools%2C%20APIs%2C%20Packages%20%26%20Blueprints&descFontSize=15&descAlignY=58&descAlign=50" alt="Awesome Persian Developer Resources" width="100%" />
 
 <p align="center">
   <b>مجموعه جامع و گلچین‌شده از بهترین ابزارها، وب‌سرویس‌ها، پکیج‌های برنامه‌نویسی و منابع رفع تحریم برای توسعه‌دهندگان ایرانی</b>
@@ -18,6 +26,10 @@
 </div>
 
 ---
+
+**In English:** a hand-picked list of tools, Iranian web APIs, Python and JavaScript packages, Persian fonts and UI kits, Persian NLP/AI libraries, payment and SMS SDKs, and learning material, for developers who write software in Persian or work from Iran. The list itself is in Persian; every entry links to its project.
+
+<div dir="rtl">
 
 ## 📌 فهرست مطالب
 
@@ -113,5 +125,7 @@
 ⭐ **اگر این مرجع برای شما مفید بود، لطفاً با زدن ستاره (Star) به دیده‌شدن آن توسط سایر توسعه‌دهندگان کمک کنید!**
 
 <sub>گردآوری و توسعه توسط <b>M-R-Z</b> ([@mrzroot](https://github.com/mrzroot))</sub>
+
+</div>
 
 </div>
